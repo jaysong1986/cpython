@@ -7855,7 +7855,7 @@ os_dup2_impl(PyObject *module, int fd, int fd2, int inheritable)
 
 #endif
 
-    Py_RETURN_NONE;
+    return PyLong_FromLong(res);
 }
 
 
